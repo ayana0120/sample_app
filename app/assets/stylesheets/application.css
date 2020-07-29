@@ -18,6 +18,9 @@
   padding: 0;
   box-sizing: border-box;;
 }
+header, h1, nav, .list-comment {
+  font-family: "kaushan Script", cursive, sans-serif;
+}
 .clearfix::after {
   content: "";
   display: block;
@@ -58,11 +61,18 @@ main {
   height: 250px;
   margin: 10px;
   float: left;
+  position: relative;
 }
 .list-comment {
   width: 200px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
 .list-body {
+  color: gray;
+  font-size: 12px;
 }
 .list-title {
+  font-size: 18px;
 }
