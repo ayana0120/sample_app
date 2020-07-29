@@ -8,7 +8,7 @@ class TodolistsController < ApplicationController
   	redirect_to todolist_path(list.id)
   end
   def index
-  	@lits = List.all
+  	@lists = List.all
   end
   def show
     @list = List.find(params[:id])
@@ -24,7 +24,7 @@ class TodolistsController < ApplicationController
   def destroy
     list = List.find(params[:id])
     list.destroy
-    redirect_to todolist_path
+    redirect_to todolists_path
   end
 
   private
